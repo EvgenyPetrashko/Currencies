@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dollar_currrency_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightGray">
+
+            <TextView
+                android:id="@+id/currency_pair_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:text="USD/RUB"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/currency_pair_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_below="@id/currency_pair_title"
+                android:text="73.20"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:id="@+id/currency_pair_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dollar_symbol"
+                android:layout_marginEnd="15dp"/>
+
+            <TextView
+                android:id="@+id/currency_pair_last_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:text="Last update:\n29.05.2021 22:23"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_alignBottom="@id/currency_pair_rate"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
